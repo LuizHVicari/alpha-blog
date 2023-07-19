@@ -4,4 +4,8 @@ class ArticlesController < ApplicationController
     @title = @article.title
     @description = @article.description
   end
+
+  def index
+    @articles = Article.all
+  end
 end
